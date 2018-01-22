@@ -1,0 +1,78 @@
+{
+    "token": "process.env.BOT_TOKEN",
+    "clientid": "405055492050780160",
+    "prefix": "!",
+    "version": "2.4.0",
+    "chat": "chatroom",
+    "userrole": "390263160944459798",
+    "streamingGame": "",
+    "streamingLink": "",
+    "evalAllowed": "false",
+    "ownerid": "190174684371746818",
+    "logging": true,
+    "commands": {
+        "blockUser": {
+            "command": "block",
+            "contributors": [],
+            "enabled": true
+        },
+        "removeBlockFromUser": {
+            "command": "removeBlock",
+            "contributors": [],
+            "enabled": true
+        },
+        "banGuildMember": {
+            "command": "ban",
+            "contributors": [],
+            "enabled": true
+        },
+        "clear": {
+            "command": "clear",
+            "contributors": [],
+            "enabled": true
+        },
+        "version": {
+            "command": "version",
+            "enabled": true
+        },
+        "queries": {
+            "command": "queries",
+            "enabled": true,
+            "contributors": []
+        },
+        "querydelete": {
+            "command": "querydelete",
+            "enabled": true,
+            "contributors": []
+        },
+        "purgelogs": {
+            "command": "purgelogs",
+            "enabled": true,
+            "contributors": []
+        },
+        "logs": {
+            "command": "logs",
+            "enabled": true,
+            "contributors": []
+        },
+        "captchas": {
+            "command": "captchas",
+            "enabled": true,
+            "contributors": []
+        },
+        "makerole": {
+            "command": "create-role",
+            "enabled": true,
+            "contributors": []
+        },
+        "unverify": {
+            "command": "unverify",
+            "enabled": true
+        }
+    },
+    "blockedIDs": {
+        "1": {
+            "blocked": "true"
+        }
+    }
+}
