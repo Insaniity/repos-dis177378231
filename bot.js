@@ -127,6 +127,17 @@ client.on("message", (message) => {
 	if(message.content === "pancake") {
 		message.react("🥞");
 	}
+	if(message.content === "pancakes") {
+		message.react("🥞");
+	}
+	if(message.content === "<@190174684371746818>") {
+		message.react("🥞");
+		message.react("🇸");
+		message.react("🇹");
+		message.react("🇴");
+		message.react("🇵");
+		message.react("❗");
+	}
 });
 process.on("unhandledRejection", (err) => {
 	console.log(err);
