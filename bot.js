@@ -133,32 +133,7 @@ client.on("message", (message) => {
 	if(message.content === "<@190174684371746818>") {
 
 		message.react("🥞");
-
-		setTimeout(function (){
-
-		message.react("🇸");
-
-		}, 100);
-		setTimeout(function (){
-
-		message.react("🇹");
-
-		}, 200);
-		setTimeout(function (){
-
-		message.react("🇴");
-
-		}, 300);
-		setTimeout(function (){
-
-		message.react("🇵");
-
-		}, 400);
-		setTimeout(function (){
-
-		message.react("❗");
-
-		}, 500);
+		message.react("❓");
 	}
 });
 process.on("unhandledRejection", (err) => {
