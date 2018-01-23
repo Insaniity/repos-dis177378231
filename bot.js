@@ -124,7 +124,7 @@ client.on("message", (message) => {
 	}catch(e){
 		console.log(e);
 	}
-	if(message.content === "pancakes") {
+	if(message.content === "pancake") {
 		message.react("🥞");
 	}
 });
