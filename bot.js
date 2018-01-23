@@ -131,11 +131,25 @@ client.on("message", (message) => {
 		message.react("🥞");
 	}
 	if(message.content === "<@190174684371746818>") {
+
+		var check = function(){
+		    if(condition){
+		        // run when condition is met
+		    }
+		    else {
+		        setTimeout(check, 1000); // check again in a second
+		    }
+		}		
 		message.react("🥞");
+		check();
 		message.react("🇸");
+		check();
 		message.react("🇹");
+		check();
 		message.react("🇴");
+		check();
 		message.react("🇵");
+		check();
 		message.react("❗");
 	}
 });
