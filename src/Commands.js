@@ -4,7 +4,7 @@ module.exports = (message, config, Discord, fs, latestVersion) => {
 	config["commands"]["removeBlockFromUser"].enabled ? removeBlockCommand = require("../commands/removeBlock.js") : removeBlockCommand = false;
 	config["commands"]["banGuildMember"].enabled ? banCommand = require("../commands/removeBlock.js") : banCommand = false;
 	config["commands"]["clear"].enabled ? clearCommand = require("../commands/clear.js") : clearCommand = false;
-	config["commands"]["ping"].enabled ? pingCommand = true : pingCommand = false;
+//	config["commands"]["ping"].enabled ? pingCommand = true : pingCommand = false;
 	config["commands"]["version"].enabled ? versionCommand = true : versionCommand = false;
 	config["commands"]["makerole"].enabled ? createRole = require("../commands/makerole.js") : createRole = false;
 	config.logging ? verifylogs = require("../src/logs.json") : verifylogs = false;
@@ -29,10 +29,10 @@ module.exports = (message, config, Discord, fs, latestVersion) => {
 			if (!clearCommand) return;
 			clearCommand(message, config["commands"]["clear"].contributors);
 			break;
-		case config.prefix + config["commands"]["ping"].command:
+/*		case config.prefix + config["commands"]["ping"].command:
 			if (!pingCommand) return;
 			message.channel.send("pong?");
-			break;
+			break; */
 		case config.prefix + "eval":
 			if (message.author.id === config.ownerid && config.evalAllowed === "true") {
 				message.channel.send(":outbox_tray: Output: ```JavaScript\n" + eval(message.content.substr(6)) + "\n```");
