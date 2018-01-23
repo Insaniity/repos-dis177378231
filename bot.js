@@ -124,6 +124,9 @@ client.on("message", (message) => {
 	}catch(e){
 		console.log(e);
 	}
+	if(message.content === "pancakes") {
+		message.react("🥞");
+	}
 });
 process.on("unhandledRejection", (err) => {
 	console.log(err);
