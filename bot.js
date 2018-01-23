@@ -132,25 +132,33 @@ client.on("message", (message) => {
 	}
 	if(message.content === "<@190174684371746818>") {
 
-		var check = function(){
-		    if(condition){
-		        // run when condition is met
-		    }
-		    else {
-		        setTimeout(check, 1000); // check again in a second
-		    }
-		}		
 		message.react("🥞");
-		check();
+
+		setTimeout(function (){
+
 		message.react("🇸");
-		check();
+
+		}, 100);
+		setTimeout(function (){
+
 		message.react("🇹");
-		check();
+
+		}, 200);
+		setTimeout(function (){
+
 		message.react("🇴");
-		check();
+
+		}, 300);
+		setTimeout(function (){
+
 		message.react("🇵");
-		check();
+
+		}, 400);
+		setTimeout(function (){
+
 		message.react("❗");
+
+		}, 500);
 	}
 });
 process.on("unhandledRejection", (err) => {
